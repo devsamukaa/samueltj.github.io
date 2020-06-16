@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health Track - Cadastro</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fonts/ubuntu.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="owl-carousel/css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="owl-carousel/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/cadastro.css">
+        <!--[if IE]><link rel="shortcut icon" href="img/ico-32x32.ico"><![endif]-->
+        <link rel="icon" href="img/ico-32x32.ico">
+    </head>
+    <body>
+        <article class="container-fluid wrapper">
+            <header class="row container--logo">
+                <div class="col-md-offset-4 col-md-4 box--logo">
+                    <img src="img/logo-70x70.png" alt="Logo Health Track">
+                    <h1>Cadastro</h1>
+                </div>
+            </header>
+            <section class="row container--form-box--create-account">
+                <div class="col-md-offset-4 col-md-4 box--create-account">
+                    <div class="owl--countainer owl-carousel">
+                        <form action="#" method="post" onsubmit="event.preventDefault(); cadastroPage.nextStep();">
+                            <span>
+                                Bem vindo! Você está a poucos passos de tornar sua vida muito mais saudável!
+                            </span>
+                            <div class="form-group">
+                                <label for="nome-completo">Nome completo</label>
+                                <input type="text" class="form-control" id="nome-completo" placeholder="ex: Samuel Rocha">
+                            </div>
+                            <div class="form-group">
+                                <label for="sexo">Sexo</label>
+                                <select class="form-control" id="sexo">
+                                    <option>Selecione</option>
+                                    <option value="M">Masculino</option>
+                                    <option value="f">Feminino</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="ex: sam@uol.com.br">
+                            </div>
+                            <button id="btn-person-data" type="submit" class="btn btn-success">CONTINUAR</button>
+                        </form>
+    
+                        <form action="#" method="post" onsubmit="event.preventDefault(); cadastroPage.nextStep();">
+                            <span>
+                                Agora crie uma senha segura para acessar a sua conta:
+                            </span>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="Digite a senha desejada">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmacao-senha">Confirmação da senha</label>
+                                <input type="password" class="form-control" id="confirmacao-senha" placeholder="Repita a mesma senha">
+                            </div>
+                            <button id="btn-password" type="submit" class="btn btn-success">CONTINUAR</button>
+                        </form>
+    
+                        <form action="login.html" method="post">
+                            <span>
+                                Quase lá! Nos informe apenas seu peso e altura para finalizar ;)
+                            </span>
+                            <div class="form-group">
+                                <label for="peso">Peso (kg)</label>
+                                <input type="text" class="form-control" id="peso" placeholder="ex: 60,0">
+                            </div>
+                            <div class="form-group">
+                                <label for="altura">Altura (m)</label>
+                                <input type="text" class="form-control" id="altura" placeholder="ex: 1,68">
+                            </div>
+                            <button type="submit" class="btn btn-success">FINALIZAR</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <script src="js/jquery.js"></script>
+        <script src="owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/cadastro.js"></script>
+    </body>
+</html>

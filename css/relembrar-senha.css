@@ -1,0 +1,30 @@
+.container--logo {
+    margin-top: 45px;
+}
+
+.box--logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box--logo h1 {
+    font-size: 18px;
+    color: #48a632;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.box--remind-password span {
+    padding: 20px 0 20px 0;
+    color: #48a632;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Health Track - Visualizar Refeição</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fonts/ubuntu.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/visualizar-refeicao.css">
+        <!--[if IE]><link rel="shortcut icon" href="img/ico-32x32.ico"><![endif]-->
+        <link rel="icon" href="img/ico-32x32.ico">
+    </head>
+    <body>
+        <article class="container-fluid wrapper">
+            <header class="row container--top-bar">
+                <div class="col-md-3 box--logo-and-btn-menu">
+                    <div class="box--logo-logged-area">
+                        <strong>Health Track</strong>
+                        <img src="img/logo-70x70.png" alt="Logo do Health Track">
+                    </div>
+                    
+                    <div id="button-menu-mob">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="col-md-9 box--top-bar">
+                    <div class="col-md-4 box--photo-user">
+                        <a href="perfil.html" title="Perfil">
+                            <img src="img/samuel.jpg" width="55px" height="55px" alt="Foto do usuário">
+                            <strong>Samuel Rocha</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-offset-6 col-md-2 box--action-logout">
+                        <a href="login.html" title="Logout">
+                            <img src="bootstrap/icons/box-arrow-right.svg" alt="Logout">
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="row container--body-page">
+                <nav class="col-md-3 box--menu">
+                    <ul class="ul--menu">
+                        <li class="item-menu">
+                            <a href="dashboard.html" title="Home">
+                                <img src="bootstrap/icons/house-fill.svg" alt="Home">
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <!-- Sua Conta -->
+                        <li class="drop-item-menu">
+                            <img src="bootstrap/icons/person-fill.svg" alt="Sua conta">
+                            <span>Sua conta</span>
+                        </li>
+                        <ul class="sub-menu">
+                            <li class="item-sub-menu">
+                                <a href="perfil.html" title="Perfil">
+                                    <img src="bootstrap/icons/person-circle.svg" alt="Perfil">
+                                    <span>Perfil</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="alterar-dados.html" title="Alterar dados">
+                                    <img src="bootstrap/icons/pencil-square.svg" alt="Alterar dados">
+                                    <span>Alterar dados</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="alterar-senha.html" title="Alterar senha">
+                                    <img src="bootstrap/icons/lock-fill.svg" alt="Alterar senha">
+                                    <span>Alterar senha</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Alimentação -->
+                        <li class="drop-item-menu">
+                            <img src="bootstrap/icons/egg-fried.svg" alt="Alimentação">
+                            <span>Alimentação</span>
+                        </li>
+                        <ul class="sub-menu">
+                            <li class="item-sub-menu">
+                                <a href="lista-refeicoes.html" title="Lista de refeições">
+                                    <img src="bootstrap/icons/card-list.svg" alt="Lista de refeições">
+                                    <span>Lista de refeições</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="adicionar-refeicao.html" title="Adicionar refeição">
+                                    <img src="bootstrap/icons/plus-circle-fill.svg" alt="Adicionar refeição">
+                                    <span>Adicionar refeição</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Exercícios -->
+                        <li class="drop-item-menu">
+                            <img src="bootstrap/icons/lightning-fill.svg" alt="Exercícios">
+                            <span>Exercícios</span>
+                        </li>
+                        <ul class="sub-menu">
+                            <li class="item-sub-menu">
+                                <a href="lista-exercicios.html" title="Lista de Exercícios">
+                                    <img src="bootstrap/icons/card-list.svg" alt="Lista de Exercícios">
+                                    <span>Lista de Exercícios</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="adicionar-exercicio.html" title="Adicionar Exercício">
+                                    <img src="bootstrap/icons/plus-circle-fill.svg" alt="Adicionar Exercício">
+                                    <span>Adicionar Exercício</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Pressão Arterial -->
+                        <li class="drop-item-menu">
+                            <img src="bootstrap/icons/person-lines-fill.svg" alt="Pressão Arterial">
+                            <span>Pressão Arterial</span>
+                        </li>
+                        <ul class="sub-menu">
+                            <li class="item-sub-menu">
+                                <a href="lista-medicoes-pressao.html" title="Lista de medições">
+                                    <img src="bootstrap/icons/card-list.svg" alt="Lista de medições">
+                                    <span>Lista de medições</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="adicionar-pressao.html" title="Adicionar medição">
+                                    <img src="bootstrap/icons/plus-circle-fill.svg" alt="Adicionar medição">
+                                    <span>Adicionar medição</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Peso e altura -->
+                        <li class="drop-item-menu">
+                            <img src="bootstrap/icons/clipboard-data.svg" alt="Peso e altura">
+                            <span>Peso e altura</span>
+                        </li>
+                        <ul class="sub-menu">
+                            <li class="item-sub-menu">
+                                <a href="lista-pesagens.html" title="Lista de pesagens">
+                                    <img src="bootstrap/icons/card-list.svg" alt="Lista de pesagens">
+                                    <span>Lista de pesagens</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="adicionar-pesagem.html" title="Adicionar pesagem">
+                                    <img src="bootstrap/icons/plus-circle-fill.svg" alt="Adicionar pesagem">
+                                    <span>Adicionar pesagem</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="lista-alturas.html" title="Lista de alturas">
+                                    <img src="bootstrap/icons/card-list.svg" alt="Lista de alturas">
+                                    <span>Lista de alturas</span>
+                                </a>
+                            </li>
+                            <li class="item-sub-menu">
+                                <a href="adicionar-altura.html" title="Adicionar altura">
+                                    <img src="bootstrap/icons/plus-circle-fill.svg" alt="Adicionar altura">
+                                    <span>Adicionar altura</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <li class="item-menu drop-item-menu">
+                            <a href="login.html" title="Logout">
+                                <img src="bootstrap/icons/box-arrow-right.svg" alt="Logout">
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Conteúdo exclusivo de cada página -->
+                <div class="col-md-9 box--page-content">
+                    <div class="row container--title-page">
+                        <div class="col-md-12 box--title-page">
+                            <h1>Café da manhã (04/06/2020)</h1>
+                        </div>
+                    </div>
+                    <div class="row container--meal-list">
+                        <div class="col-md-12 box--meal-list">
+                            <table class="table table-striped table--list">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">DATA</th>
+                                        <th scope="col">PESO (kg)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pão</td>
+                                        <td>130 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ovos mexidos</td>
+                                        <td>120 kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suco de laranja</td>
+                                        <td>70 kcal</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row box-button-add-meal">
+                        <a href="editar-refeicao.html" title="Editar Refeição">
+                            <button type="button" class="btn btn-success">EDITAR REFEIÇÃO</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <script src="js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/global-logged-area.js"></script>
+    </body>
+</html>
